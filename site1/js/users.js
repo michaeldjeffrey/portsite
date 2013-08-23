@@ -37,5 +37,5 @@ $(function(){
         contacts_list.append(contact)
     })
     var friends_online = $("<li>").html('<strong>Contacts('+contact_count+')</strong>')
-    $('.contacts').append(friends_online).append(contacts_list)
+    $('.contacts').prepend(contacts_list).prepend(friends_online)
 })
