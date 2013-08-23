@@ -222,13 +222,15 @@
         padding: 8px;
         vertical-align: middle;
     }
-
-    .right-pane, .right-pane-header{
+    #right-pane-wrapper{
+        position: fixed;
         margin-left: 53.3%;
         background: #fff;
+        width: 33%;
+        height: 100%;
+    }
+    .right-pane, .right-pane-header{
         padding: 32px 20px;
-        width: 30%;
-        position: absolute;
     }
     .right-pane-header{
         background: rgb(206, 32, 16);
@@ -275,7 +277,11 @@
         margin-top: 10px;
         padding: 10px;
         line-height: 1.6em;
-        color: #777;
+        color: rgb(119, 119, 119);
+        height: 70%;
+        width: 87%;
+        position: absolute;
+        overflow-y: auto;
     }
     .right-pane .email-body .quote{
         padding-left: 30px;
@@ -299,6 +305,7 @@
         position: fixed;
         right: 0;
         width: 13.3%;
+        height: 100%;
         background: white;
         font-size: 12px;
     }
@@ -332,6 +339,44 @@
         height: 10px;
         width: 10px;
         line-height: 0;
+    }
+    .right-nav .contacts{
+        background-color: rgb(244, 244, 244);
+        padding: 15px;
+        position: absolute;
+        height: 80%;
+        width: 85%;
+        overflow-y: auto;
+    }
+
+    .contacts li{
+        margin: 0px -15px;
+        padding: 10px 0px;
+        padding-left: 15px;
+    }
+    .contacts ul li:hover{
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .contacts ul li span{
+        margin-right: 5px;
+        font-size: 7px;
+    }
+    .icon-circle.online{ color: rgb(141, 202, 53);}
+    .icon-circle.away{ color: rgb(255, 171, 0);}
+    .icon-circle.busy{ color: rgb(218, 54, 16);}
+    .icon-circle.offline{ color: rgb(204, 204, 204);}
+    .right-nav .bottom{
+        bottom: 0px;
+        background: rgb(244, 244, 244);
+        padding: 5px 0px;
+        border-top: 1px solid #ccc;
+    }
+    .bottom a{
+        color: #ccc;
+    }
+    .bottom a:hover{
+        color: #aaa;
     }
 
 
@@ -424,75 +469,78 @@
         </div>
     </div>
 
-    <div class="right-pane-header">
-        <h1>Title Here</h1>
-        <div class="right">
-            <i class="icon-remove"></i><br>
-            <i class="icon-chevron-right"></i><br>
-            <i class="icon-chevron-left"></i><br>
-        </div>
-    </div>
-    <div class="right-pane">
-        <div class="user">
-            <div class="userpicture"></div>
-            <span class="text">
-                <span class="username">Kitty FluffyKins </span> &emsp;/
-                <span class="mail-from alert">stevejobs@apple.com</span> to <span class="mail-to alert">me</span>
-                <div class='circle'><i class="icon-angle-down icon-large muted"></i></div>
-            </span>
-            <div class="mail-date right">Nov 14 (9 days ago)</div>
-            <div class="email-body">
-                    Mr. Eduardo Santos,
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br><br>
-                    <div class='quote'>
-                    <i class="icon-quote-left icon-3x icon-muted"></i>
-                        "Design is a funny word. Some people think design means how it looks.
-                        But of course, if you dig deeper, it's really how it work… To design something really well, you have to get it.
-                        you have to really grok what it's all about.
-                        It takes a passionate commitment to really thoroughly understand something, chew it up, not just quickly swallow it.
-                        Most people don't take the time to do that."
-                    </div>
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Enim, soluta sapiente ratione exercitationem tempora esse quae illum animi reiciendis
-                    beatae praesentium repellendus sunt nesciunt dicta autem fuga vitae numquam consectetur
-                    eius quis vel minus tenetur ullam labore unde.
-                    Obcaecati, quae, pariatur provident quia nostrum eveniet
-                    eius soluta voluptatem consectetur voluptatibus.
+    <div id="right-pane-wrapper">
 
-                    <div class="attachments">
-                        <table class="table-striped">
-                            <tr>
-                                <td width='90%'><span class="badge blue-badge">HTML</span> index.html <span class="muted">(5.2 KB)</span></td>
-                                <td>Share</td>
-                                <td>View</td>
-                                <td>Download</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge green-badge">CSS</span> style.css <span class="muted">(16.1 KB)</span></td>
-                                <td>Share</td>
-                                <td>View</td>
-                                <td>Download</td>
-                            </tr>
-                        </table>
-                    </div>
-            <div class="email-reply">
-                <div class='uneditable-input'><em>Click here to <a href='#' style='color:red;'>Reply</a> or <a href='#' style='color:red;'>Forward</a></em></div>
-            </div>
+        <div class="right-pane-header">
+            <h1>Title Here</h1>
+            <div class="right">
+                <i class="icon-remove"></i><br>
+                <i class="icon-chevron-right"></i><br>
+                <i class="icon-chevron-left"></i><br>
             </div>
         </div>
+        <div class="right-pane">
+            <div class="user">
+                <div class="userpicture"></div>
+                <span class="text">
+                    <span class="username">Kitty FluffyKins </span> &emsp;/
+                    <span class="mail-from alert">stevejobs@apple.com</span> to <span class="mail-to alert">me</span>
+                    <div class='circle'><i class="icon-angle-down icon-large muted"></i></div>
+                </span>
+                <div class="mail-date right">Nov 14 (9 days ago)</div>
+                <div class="email-body">
+                        Mr. Eduardo Santos,
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>
+                        <div class='quote'>
+                        <i class="icon-quote-left icon-3x icon-muted"></i>
+                            "Design is a funny word. Some people think design means how it looks.
+                            But of course, if you dig deeper, it's really how it work… To design something really well, you have to get it.
+                            you have to really grok what it's all about.
+                            It takes a passionate commitment to really thoroughly understand something, chew it up, not just quickly swallow it.
+                            Most people don't take the time to do that."
+                        </div>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Enim, soluta sapiente ratione exercitationem tempora esse quae illum animi reiciendis
+                        beatae praesentium repellendus sunt nesciunt dicta autem fuga vitae numquam consectetur
+                        eius quis vel minus tenetur ullam labore unde.
+                        Obcaecati, quae, pariatur provident quia nostrum eveniet
+                        eius soluta voluptatem consectetur voluptatibus.
+
+
+                        <div class="attachments">
+                            <table class="table-striped">
+                                <tr>
+                                    <td width='90%'><span class="badge blue-badge">HTML</span> index.html <span class="muted">(5.2 KB)</span></td>
+                                    <td>Share</td>
+                                    <td>View</td>
+                                    <td>Download</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge green-badge">CSS</span> style.css <span class="muted">(16.1 KB)</span></td>
+                                    <td>Share</td>
+                                    <td>View</td>
+                                    <td>Download</td>
+                                </tr>
+                            </table>
+                        </div>
+                <div class="email-reply">
+                    <div class='uneditable-input'><em>Click here to <a href='#' style='color:red;'>Reply</a> or <a href='#' style='color:red;'>Forward</a></em></div>
+                </div>
+                </div>
+            </div>
+    </div>
     </div>
 
     <div class="right-nav">
         <div id="chat">
-            <header>
                 <div class="chat-header">
                         Chat
                         <span class="right">
@@ -504,11 +552,12 @@
                 <div class="userpicture"></div>
                 <span class="username">Kitty FluffyKins <div class='circle'><i class="icon-angle-down muted"></i></div></span>
             </div>
-            </header>
 
             <div class="contacts">
-
             </div>
+        </div>
+            <div class="bottom">
+            <a href="#"><i class="icon-plus-sign icon-2x"></i></a>
         </div>
     </div>
 
