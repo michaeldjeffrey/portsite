@@ -26,6 +26,9 @@ button.red:hover{
     color: rgb(200, 200, 200);
     border-color: rgb(200, 200, 200);
 }
+.rounded{
+    border-radius: 5px;
+}
 .right{float: right; }
 .left{float: left; }
 .clear{clear: both; }
