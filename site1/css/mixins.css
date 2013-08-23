@@ -1,0 +1,57 @@
+.alert{
+    color: rgb(205, 32, 12) !important;
+    border-color: rgb(205, 32, 12)!important;
+}
+.muted{
+    color: rgb(200, 200, 200);
+    border-color: rgb(200, 200, 200);
+}
+.right{float: right; }
+.left{float: left; }
+.clear{clear: both; }
+.icon-star{
+    color: rgb(253, 155, 13);
+}
+.icon-star:hover{
+    color: rgb(255, 205, 63);
+    cursor: pointer;
+}
+.icon-star-empty:hover{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.icon-check:hover, .icon-check-empty:hover{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.badge {
+    display: inline-block;
+    min-width: 0.5em;
+    min-height: 0.5em;
+    padding: 5px;
+    font-size: 10px;
+    /*font-weight: bold;*/
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999999;
+    border-radius: 2px;
+    margin-right: 0.2em;
+}
+.green-badge{ background: rgb(125, 195, 41); }
+.blue-badge{ background: rgb(23, 177, 212); }
+.red-badge{ background: rgb(252, 88, 33); }
+.circle{
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    font-size:10px;
+    color:#aaa;
+    line-height:20px;
+    text-align:center;
+    background:#fff;
+    border: 1px solid #aaa;
+    display: inline-block;
+}
