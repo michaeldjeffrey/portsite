@@ -1,4 +1,5 @@
 a{text-decoration: none;}
+li{list-style: none;}
 .alert{
     color: rgb(205, 32, 12) !important;
     border-color: rgb(205, 32, 12)!important;
