@@ -50,7 +50,7 @@ $(function(){
         if(value['tag'] != ''){
             subject.prepend('<span class="badge '+value['tag-color']+'-badge">'+value['tag']+'</span>')
         }
-        $("table")
+        $(".left-pane table")
             .append($('<tr>')
                 .append(checkmark)
                 .append(star)
