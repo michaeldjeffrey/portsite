@@ -83,13 +83,14 @@ li > i{ margin-right: 5px; }
     display: inline-block;
     width: 80%;
 }
-.email .info .subject{
+.info .subject{
     margin: 5px 0px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.4em;
 }
-.email .info .website{
+.info .website{
     font-size: 14px;
 }
 .email .date .date{
