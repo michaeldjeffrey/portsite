@@ -19,6 +19,7 @@
         box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2);
         padding: 40px;
         box-sizing: border-box;
+        overflow: auto;
     }
     #viewer .header{
         margin-bottom: 20px;
@@ -47,6 +48,47 @@
     .email-text .via{
         margin-top: 10px;
     }
+    .icon-heart.red{
+        color: red;
+    }
+    .likes{
+        padding: 40px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .likes .text{
+        font-size: 12px;
+        text-transform: uppercase;
+        width: 50px;
+        margin-right: 10px;
+    }
+    .likes .picture{
+        margin-right: 10px;
+    }
+    .likes .right{
+        font-size: 12px;
+    }
+    .reply{
+        position: relative;
+        padding-left: 80px;
+        margin-bottom: 10px;
+    }
+    .reply .picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+    #flyout{
+        position: absolute;
+        background: rgb(247, 247, 247);
+        box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.2);
+        width: 282px;
+        bottom: 0;
+        right: 20px;
+        padding: 5px 9px;
+    }
+
+
 
 
     </style>
@@ -86,9 +128,9 @@
             <div class="header">
                 <div class="left muted"><h3>My Feed</h3></div>
                 <div class="button-group right">
-                    <button class="btn green"><i class="icon-link icon-large"></i> Add Link</button>
-                    <button class="btn green"><i class="icon-edit icon-large"></i></button>
-                    <button class="btn green"><i class="icon-dropbox icon-large"></i></button>
+                    <button class="btn green-solid"><i class="icon-link icon-large"></i> Add Link</button>
+                    <button class="btn green-solid"><i class="icon-edit icon-large"></i></button>
+                    <button class="btn green-solid"><i class="icon-dropbox icon-large"></i></button>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -122,9 +164,30 @@
                     </div>
                     <div class="via"><img src="http://www.placekitten.com/15/15">&emsp;<span class="muted"> via </span> thenextweb.com <i class="icon-angle-right muted small"></i></div>
                 </div>
-
+            </div>
+            <div class='likes'>
+                <div class="left">
+                    <span class='left muted text'>Seen & Likes</span>
+                    <div class="picture left"><img src="http://www.placekitten.com/20/20" alt="" class="circle small"></div>
+                    <div class="picture left"><img src="http://www.placekitten.com/20/20" alt="" class="circle small"></div>
+                </div>
+                <div class="right">
+                    <i class="icon-heart icon-large red"></i> LIKE
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="reply">
+                <div class="picture"><img src="http://www.placekitten.com/40/40" alt="" class="circle"></div>
+                <textarea class="uneditable-input" placeholder='Write your response here...'></textarea>
+            </div>
+            <div class="right">
+                <button class="green">Send</button>
             </div>
         </div>
+    </div>
+    <div id="flyout">
+        Chat with us!
+        <i class="icon-caret-up right"></i>
     </div>
     <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
     <script type="text/javascript" src="js/emails.js"></script>
