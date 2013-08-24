@@ -15,20 +15,22 @@
         width: 100%;
         background: #aaa;
     }
-    .left-nav{
-        background: rgb(14, 18, 31);
+    #left-nav{
+        background: rgb(2, 9, 24);
         color: #aaa;
         height: 100%;
         position: relative;
         width: 15%;
+        display: inline-block;
+        float: left;
     }
-    .left-nav .top{
+    #left-nav .top{
         position: relative;
         width: 90%;
         text-align: center;
         padding: 30px 5%;
     }
-    .left-nav .top span{
+    #left-nav .top span{
         padding: 20px;
     }
     /* target the arrow next to the users picture on the left nav bar */
@@ -57,11 +59,21 @@
         width: 100%;
     }
 
+    #feed{
+        display: inline-block;
+        background: white;
+        height: 100%;
+        width: 45%
+    }
+    #feed .header{
+        padding: 20px;
+    }
+
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div class="left-nav">
+        <div id="left-nav">
             <div class="top">
                 <span class="left">
                     <img class='rounded' src="http://placekitten.com/40/40" alt="">
