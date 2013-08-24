@@ -9,12 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/mixins.css">
     <style type="text/css">
     html{height: 100%; }
-
+    #wrapper{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: #aaa;
+    }
     .left-nav{
         background: rgb(14, 18, 31);
         color: #aaa;
         height: 100%;
-        position: fixed;
+        position: relative;
         width: 15%;
     }
     .left-nav .top{
@@ -55,33 +60,35 @@
     </style>
 </head>
 <body>
-    <div class="left-nav">
-        <div class="top">
-            <span class="left">
-                <img class='rounded' src="http://placekitten.com/40/40" alt="">
-            </span>
-            <span class="right">
-                <img class='circle' src="http://placekitten.com/40/40" alt=""><i class="icon-sort-down"></i>
-            </span>
-            <div class="clear"></div>
-        </div>
-        <div class="menu">
-            <ul>
-                <li class='heading active'><i class="icon-compass icon-large"></i> My Feed</li>
-                <li class="label">Groups</li>
-                <li>Inc</li>
-                <li>Design</li>
-                <li>Random</li>
-                <li>Kippt related</li>
-                <li class="heading"><i class="icon-bolt icon-large"></i> Alerts</li>
-                <li class="heading"><i class="icon-search icon-large"></i> Search</li>
-            </ul>
-        </div>
-        <div class="menu bottom">
-            <ul>
-                <li class="heading"><i class="icon-user icon-large"></i> Invite</li>
-                <li class="heading"><i class="icon-cog icon-large"></i> Settings</li>
-            </ul>
+    <div id="wrapper">
+        <div class="left-nav">
+            <div class="top">
+                <span class="left">
+                    <img class='rounded' src="http://placekitten.com/40/40" alt="">
+                </span>
+                <span class="right">
+                    <img class='circle' src="http://placekitten.com/40/40" alt=""><i class="icon-sort-down"></i>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class='heading active'><i class="icon-compass icon-large"></i> My Feed</li>
+                    <li class="label">Groups</li>
+                    <li>Inc</li>
+                    <li>Design</li>
+                    <li>Random</li>
+                    <li>Kippt related</li>
+                    <li class="heading"><i class="icon-bolt icon-large"></i> Alerts</li>
+                    <li class="heading"><i class="icon-search icon-large"></i> Search</li>
+                </ul>
+            </div>
+            <div class="menu bottom">
+                <ul>
+                    <li class="heading"><i class="icon-user icon-large"></i> Invite</li>
+                    <li class="heading"><i class="icon-cog icon-large"></i> Settings</li>
+                </ul>
+            </div>
         </div>
     </div>
 
