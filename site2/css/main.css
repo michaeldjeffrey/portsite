@@ -1,0 +1,102 @@
+html{height: 100%; }
+#wrapper{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #aaa;
+}
+#left-nav{
+    background: rgb(2, 9, 24);
+    color: #aaa;
+    height: 100%;
+    position: relative;
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+#left-nav .top{
+    position: relative;
+    width: 90%;
+    text-align: center;
+    padding: 30px 5%;
+}
+#left-nav .top span{
+    padding: 20px;
+}
+/* target the arrow next to the users picture on the left nav bar */
+.circle + i{
+    position: relative;
+    bottom: 15px;
+    margin-left: 5px;
+}
+.menu{
+    /*background: #ccc;*/
+    border-bottom: 1px solid rgb(31, 34, 46)
+}
+.menu li{
+    padding: 10px 0px 10px 25px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.menu li:last-child{
+    padding-bottom: 15px;
+}
+/* Leave spacing between icons and words in list items */
+li > i{ margin-right: 5px; }
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#feed{
+    display: inline-block;
+    background: white;
+    height: 100%;
+    width: 35%;
+}
+#feed .header{
+    padding: 20px;
+}
+#feed .header h3{
+    margin: 12px;
+}
+#feed .header{
+    border-bottom: 1px solid #ccc;
+}
+.email-list .email{
+    padding: 20px;
+}
+.email{
+    border-bottom: 1px solid #ccc;
+}
+.email .picture{
+    padding: 8px;
+    margin-right: 10px;
+}
+.email .info{
+    display: inline-block;
+    width: 80%;
+}
+.email .info .subject{
+    margin: 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.email .info .website{
+    font-size: 14px;
+}
+.email .date .date{
+    margin-bottom: 3px;
+}
+.email:hover, .email.active{
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.email:hover .sucject, .email.active .subject{
+    color: #111;
+}
+.email:hover .website, .email.active .website{
+    color: #555;
+}
