@@ -6,113 +6,82 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mixins.css">
     <style type="text/css">
     html{height: 100%; }
-    body{background: rgb(232, 232, 232); }
 
     .left-nav{
-        background: rgb(19, 19, 19);
+        background: rgb(14, 18, 31);
         color: #aaa;
         height: 100%;
         position: fixed;
-        width: 10%;
+        width: 15%;
     }
-    .left-nav h1{
-        margin-top: 30px;
+    .left-nav .top{
+        position: relative;
+        width: 90%;
         text-align: center;
+        padding: 30px 5%;
     }
-    .left-nav-list {
-        list-style: none;
-        margin-top: 20px;
+    .left-nav .top span{
+        padding: 20px;
     }
-    .left-nav-list li a{
-        display: block;
-        padding: 10px 0;
-        padding-left: 20px;
+    /* target the arrow next to the users picture on the left nav bar */
+    .circle + i{
+        position: relative;
+        bottom: 15px;
+        margin-left: 5px;
+    }
+    .menu{
+        /*background: #ccc;*/
+        border-bottom: 1px solid rgb(31, 34, 46)
+    }
+    .menu li{
+        padding: 10px 0px 10px 25px;
+        padding-left: 25px;
         font-size: 12px;
     }
-    .left-nav-list a{
-        color: inherit;
-        text-decoration: none;
+    .menu li:last-child{
+        padding-bottom: 15px;
     }
-    .left-nav-list li:last-child a{
-        text-align: center;
-        padding-left: 0;
-    }
-    .left-nav-list li:last-child:hover{
-        background: rgb(19, 19, 19);
-        color: white;
-    }
-    .left-nav-list li:hover{
-        background: rgb(35, 35, 35);
-    }
-    .left-nav-list li:nth-last-child(2){
-        border-bottom: 1px solid rgb(30, 30, 30);
-    }
-    .left-nav-list .list-header{
-        padding-left: 20px;
-        padding-bottom: 20px;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgb(90, 90, 90);
-    }
-    .left-nav-list .list-header:hover{
-        background: rgb(19, 19, 19);
-    }
-
-    .left-nav-list .green-badge,
-    .left-nav-list .blue-badge,
-    .left-nav-list .red-badge{
-        margin-right: 1em;
-    }
-    table .badge{
-        margin-top: -5px;
-        margin-bottom: -90px;
-    }
+    /* Leave spacing between icons and words in list items */
+    li > i{ margin-right: 5px; }
     .bottom{
         position: absolute;
-        bottom: 20px;
+        bottom: 0px;
         width: 100%;
-        text-align: center;
     }
-    .bottom button{
-        background: rgb(26, 26, 26);
-        color: rgb(51, 51, 51);
-        padding: 15px;
-    }
-    .bottom button:hover{
-        background: rgb(36, 36, 36);
-        color: rgb(61, 61, 61);
-    }
+
     </style>
 </head>
 <body>
     <div class="left-nav">
-        <h1 class='time'>16:02</h1>
-        <button class="red">write</button>
-
-
-        <ul class='left-nav-list'>
-            <li><a href="#">Inbox (4)</a></li>
-            <li><a href="#">Starred</a></li>
-            <li><a href="#">Important</a></li>
-            <li><a href="#">Sent</a></li>
-            <li><a href="#">Drafts</a></li>
-            <li><a href="#">Trash</a></li>
-            <li><a href="#"><i class="icon-plus-sign icon-2x"></i></a></li>
-        </ul>
-
-        <ul class="left-nav-list">
-            <li class="list-header">Labels</li>
-            <li><a href="#">Tag <span class="badge right green-badge"></span></a></li>
-            <li><a href="#">Clients <span class="badge right blue-badge"></span></a></li>
-            <li><a href="#">Opportunities <span class="badge right red-badge"></span></a></li>
-            <li><a href="#"><i class="icon-plus-sign icon-2x"></i></a></li>
-        </ul>
-
-        <div class="bottom">
-            <button><i class="icon-cog icon-2x"></i></button>
-            <button><i class="icon-off icon-2x"></i></button>
+        <div class="top">
+            <span class="left">
+                <img class='rounded' src="http://placekitten.com/40/40" alt="">
+            </span>
+            <span class="right">
+                <img class='circle' src="http://placekitten.com/40/40" alt=""><i class="icon-sort-down"></i>
+            </span>
+            <div class="clear"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class='heading active'><i class="icon-compass icon-large"></i> My Feed</li>
+                <li class="label">Groups</li>
+                <li>Inc</li>
+                <li>Design</li>
+                <li>Random</li>
+                <li>Kippt related</li>
+                <li class="heading"><i class="icon-bolt icon-large"></i> Alerts</li>
+                <li class="heading"><i class="icon-search icon-large"></i> Search</li>
+            </ul>
+        </div>
+        <div class="menu bottom">
+            <ul>
+                <li class="heading"><i class="icon-user icon-large"></i> Invite</li>
+                <li class="heading"><i class="icon-cog icon-large"></i> Settings</li>
+            </ul>
         </div>
     </div>
 
