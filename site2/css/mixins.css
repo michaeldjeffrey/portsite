@@ -4,6 +4,7 @@ button{
     padding: 10px 20px;
     border-radius: 2px;
     border: none;
+    font-size: 14px;
 }
 button.red{
     background: rgb(206, 32, 16);
@@ -89,11 +90,11 @@ button.green{
     font-size: 10px;
     /*font-weight: bold;*/
     line-height: 1;
-    color: #ffffff;
+    color: #333;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    background-color: #999999;
+    background-color: #eee;
     border-radius: 2px;
     margin-right: 0.2em;
 }
@@ -110,6 +111,13 @@ button.green{
     text-align:center;
     background:#fff;
     display: inline-block;
+}
+.small{
+    font-size: 12px;
+}
+.circle.small{
+    width: 25px;
+    height: 25px;
 }
 table.table-striped tr:nth-child(odd){
     background-color: rgb(244, 244, 244);
