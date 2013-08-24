@@ -18,12 +18,46 @@ button.red{
 button.red:hover{
     background: rgb(186, 20, 6);
 }
+button.green{
+    background: rgb(69, 161, 136);
+    border-bottom: 1px solid rgb(51, 127, 100);
+    color: white;
+
+}
+.button-group{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    zoom: 1;
+}
+.button-group button{
+    margin-left: -2px;
+    float: left;
+}
+.button-group button:not(:last-child):not(:first-child){
+    border-radius: 0;
+}
+.button-group button:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.button-group button:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.button-group button:not(:first-child){
+    border-left: 1px solid rgb(51, 127, 100);
+}
+.button-group button:not(:last-child){
+    border-right: 1px solid #64bcab;
+}
 .alert{
     color: rgb(205, 32, 12) !important;
     border-color: rgb(205, 32, 12)!important;
 }
 .muted{
-    color: rgb(200, 200, 200);
+    color: rgb(150, 150, 150);
     border-color: rgb(200, 200, 200);
 }
 .rounded{
@@ -108,7 +142,7 @@ li.heading:hover,
 li.heading:hover > i,
 li.heading.active,
 li.heading.active > i{
-    background: rgb(50, 55, 65);
+    background: rgb(65, 71, 81);
     color: #fff;
 }
 li.label{
