@@ -54,6 +54,7 @@ li > i{ margin-right: 5px; }
     background: white;
     height: 100%;
     width: 35%;
+    float: left;
 }
 #feed .header{
     padding: 20px;
@@ -63,6 +64,10 @@ li > i{ margin-right: 5px; }
 }
 #feed .header{
     border-bottom: 1px solid #ccc;
+}
+.email-list{
+    overflow: auto;
+    height: 77%;
 }
 .email-list .email{
     padding: 20px;
