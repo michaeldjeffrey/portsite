@@ -1,4 +1,7 @@
 html{height: 100%; }
+a{
+    color: rgb(61, 141, 113);
+}
 #wrapper{
     position: fixed;
     height: 100%;
@@ -75,7 +78,7 @@ li > i{ margin-right: 5px; }
 .email{
     border-bottom: 1px solid #ccc;
 }
-.email .picture{
+.email .picture, #viewer .header .picture{
     padding: 8px;
     margin-right: 10px;
 }

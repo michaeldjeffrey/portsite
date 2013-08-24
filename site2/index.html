@@ -10,16 +10,44 @@
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
     <style type="text/css">
-        #viewer{
-            display: inline-block;
-            width: 50%;
-            height: 100%;
-            background: blue;
-            float: left;
-            box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            box-sizing: border-box;
-        }
+    #viewer{
+        display: inline-block;
+        width: 45%;
+        height: 100%;
+        background: white;
+        float: left;
+        box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    #viewer .header{
+        margin-bottom: 20px;
+    }
+    .sender{
+        display: inline-block;
+    }
+    .sender .info{
+        display: inline-block;
+    }
+    .email-content h2{
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .email-text{
+        padding-left: 110px;
+        position: relative;
+        line-height: 2em;
+        font-size: 14px;
+    }
+    .email-text .picture{
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+    .email-text .via{
+        margin-top: 10px;
+    }
+
 
     </style>
 </head>
@@ -68,9 +96,36 @@
                 <!-- EMAILS POPULATE HERE -->
             </div>
         </div>
-        <div id="viewer">Something goes here for all eternity</div>
-    </div>
+        <div id="viewer">
+            <div class="header">
+                <div class="sender left">
+                    <div class="picture left"><img class="circle small" src="http://placekitten.com/25/25"></div>
+                    <div class="info">
+                        <h4 class="subject">Jori Lallo <span class='muted small'>added this 6 days ago</span></h4>
+                        <p class="website muted">to <a href="#">Inc</a></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="gray">Edit</button>
+                    <button class="gray">Delete</button>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="email-content thumbnail">
+                <h2>IFTTT comes to iPhone with a crisp app featuring native Photos, Reminders, and Contact Channels</h2>
+                <div class="email-text">
+                    <div class="picture"><img src="http://www.placekitten.com/100/100"></div>
+                    <div class="body muted">
+                        The digital glue service IFTTT is finally launching an iPhone app and it brings
+                        with it a set of new channels specific to Apple's platform and a lovely mobile platform
+                        for both building and using its automated actions.
+                    </div>
+                    <div class="via"><img src="http://www.placekitten.com/15/15">&emsp;<span class="muted"> via </span> thenextweb.com <i class="icon-angle-right muted small"></i></div>
+                </div>
 
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
     <script type="text/javascript" src="js/emails.js"></script>
 </body>
