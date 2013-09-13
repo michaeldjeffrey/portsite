@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Portofolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le Styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/skill-chart.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+      <!-- Navbar
+          ================================================== -->
+      <div class="navbar navbar-fixed-top center">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav" id="nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#portofolio">My work</a></li>
+              <li><a href="#aboutme">About me</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end Navbar -->
+
+      <!-- Home
+        ================================================== -->
+      <section id="home" class="main-section">
+        <div class="container">
+          <div class="row presentation">
+            <div class="span4 offset4 photo">
+              <!-- <img src="img/silueta.png" alt="yourname"> -->
+              <img src="img/me.png" alt="yourname">
+            </div>
+            <div class="span8 offset2 name">
+              <h1>MICHAEL JEFFREY</h1>
+              <h2>Web Developer</h2>
+            </div>
+            <div class="span12 phrase">
+              <p>"Well that's interersting"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Home -->
+
+      <!-- Portofolio
+        ================================================== -->
+      <section id="portofolio" class="main-section">
+        <div class="title-section">
+          <h1>My work</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="span12 images">
+              <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <!-- Add your work here -->
+                  <div class="item active">
+                    <img src="img/slide-2.png" alt="">
+                    <div class="carousel-caption">
+                      <h4>Backbone Applications</h4>
+                      <p>Music application for discovering music uploaded to Soundcloud. Built using Backbone.js and Marionette.js</p>
+                      <!-- <a href="http://theproject.com">http://theproject.com</a> -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/slide-1.png" alt="">
+                    <div class="carousel-caption">
+                      <h4>Python Applications</h4>
+                      <p>Application for estimating and managing windshield replacement. Built using Flask Python Micro-framework and Mongodb.</p>
+                      <!-- <a href="http://theproject.com">http://theproject.com</a> -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/slide-3.png" alt="">
+                    <div class="carousel-caption">
+                      <h4>File Management and Feature Implementation</h4>
+                      <p>Managed file uploads and downloads on teams up to 5. And implemented per spec features.</p>
+                      <!-- <a href="http://theproject.com">http://theproject.com</a> -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/slide-4.png" alt="">
+                    <div class="carousel-caption">
+                      <h4>Ecommerce</h4>
+                      <p>Managed two running websites running on MyBigCommerce framework. Dealing with large amounts of pictures, and product data.</p>
+                      <!-- <a href="http://theproject.com">http://theproject.com</a> -->
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+              </div>
+            </div>
+            <div class="span12 phrase">
+              <!-- <p>"Etiam dapibus ultrices diam ac ullamcorper"</p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Portofolio -->
+
+      <!-- About me
+        ================================================== -->
+      <section id="aboutme" class="main-section">
+        <div class="title-section">
+          <h1>About me</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="span6 biography">
+              <h1>This is me</h1>
+              <div class="myphoto">
+                <img src="img/silueta.png" alt="yourname">
+              </div>
+              <div class="information">
+                <p>Hello, I'm Michael Jeffrey. I originally got into web development shortly after I started school at the Art Institute of Phoenix for Web Design and Interactive Media.</p>
+                <p>I was thrilled with the ability to not only design websites, but manipulate data into something that people can actually use. Which led me to want to start making application that people don't just use to consume data, but input data. </p>
+                <p>My dream is to work for a company making functional applications that people can make a part of their everyday lives. And privacy policy willing, collect data that can really speak fluently about the users.</p>
+              </div>
+            </div>
+            <div class="span6 skills">
+              <h1>Skills</h1>
+              <div id="skill-chart">
+                <!-- Bar chart skills here-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end About me -->
+
+      <!-- Contact
+        ================================================== -->
+      <section id="contact" class="main-section">
+        <div class="title-section">
+          <h1>Contact</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="span6 form-contact">
+              <h1>Send me a message ...</h1>
+              <form class="form">
+                <input class="input-form" type="text" placeholder="Type your name ..." required><br/>
+                <input class="input-form" type="email" placeholder="Type your email ..." required><br/>
+                <textarea class="input-xlarge" placeholder="Write a message ..." required></textarea><br/>
+                <button type="submit" class="btn btn-large">Send!</button>
+              </form>
+            </div>
+            <div class="span6 social-contact">
+              <h1>... or just socialize me</h1>
+              <div class="social">
+                <ul>
+                  <li class="twitter">Follow me on <a href="https://twitter.com/mikedjeff">Twitter</a></li>
+                  <li class="facebook">Like me on <a href="https://www.facebook.com/MichaeldJeffrey">Facebook</a></li>
+                  <li class="google">Find me on <a href="https://plus.google.com/103441511338046073886">Google+</a></li>
+                  <!-- <li class="skype">Talk me on <a href="#myskype">Skype</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Contact -->
+
+      <footer>
+          <p>Copyright © 2012. All rights reserved. | Created by <a href="https://github.com/abermejo">Arturo Bermejo</a></p>
+      </footer>
+
+
+      <!-- Le javascript
+          ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="js/libs/jquery.js"></script>
+      <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+      <script type="text/javascript" src="js/libs/jquery.scrollTo.js"></script>
+      <script type="text/javascript" src="js/libs/jquery.nav.js"></script>
+      <script type="text/javascript" src="js/libs/skill-chart.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

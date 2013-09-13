@@ -1,0 +1,246 @@
+/*!
+ * Simple portofolio Template v1.0
+ *
+ * Built with Bootstrap v2.1.1
+ * http://twitter.github.com/bootstrap
+ * Author: Arturo Bermejo <abermejo.cs@gmail.com>
+ */
+
+/* General
+-------------------------------------------------- */
+@font-face {  
+  font-family: 'Lilita One';  
+  src: url('fonts/LilitaOne-Regular.ttf');
+  font-style: 'cursive';
+}
+
+body {
+  background-color: #D6DEE4;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.input-form {
+  height: 35px !important;
+  font-size: 18px !important;
+  width: 400px;
+}
+
+.main-section {
+  min-width: 1024px;
+}
+
+.carousel-caption {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  background: #020F16;
+  background: rgba(2, 15, 22, 1);
+  text-align: right;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 25px;
+  font-size: 25px;
+}
+
+.carousel-caption p {
+  margin-bottom: 25px;
+}
+
+.title-section {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+  background-color: #C52525;
+  width: 200px;
+  color: white;
+  border-radius: 0 30px 30px 0;
+}
+
+/* Navbar
+  ================================================== */
+.navbar-inner {
+  border: none;
+  text-align:center;
+  float: none;
+}
+
+.center.navbar .nav, .center.navbar .nav > li {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* Home
+  ================================================== */
+#home {
+  /*background-image: url('../img/bg.png');*/
+  background-color: #020F16;
+  height: 580px;
+}
+
+#home .presentation {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#home .name {
+  margin-top: -40px;
+}
+
+#home .name h1 {
+  padding-bottom: 5px;
+  font-family: 'Lilita One', cursive;
+  font-size: 65px;
+  color: #C52525;
+}
+
+#home .name h2 {
+  background-image: url('../img/divider.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 25px;
+  color: white;
+}
+
+#home .phrase {
+  text-align: center;
+  font-size: 25px;
+  color: #4F8118;
+}
+
+/* portofolio
+  ================================================== */
+#portofolio {
+  height: 500px;
+  background-image: url('../img/bg-top-portofolio.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  padding-top: 40px;
+}
+
+#portofolio .container {
+  margin-top: 90px;
+}
+
+#portofolio #myCarousel .carousel-inner{
+  width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+#portofolio .phrase {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+
+/* About me
+  ================================================== */
+#aboutme {
+  height: 620px;
+  background-image: url('../img/bg-top-aboutme.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  padding-top: 40px;
+  background-color: #020F16;
+}
+
+#aboutme .container {
+  margin-top: 90px;
+}
+
+#aboutme .container h1 {
+  color: #4F8118;
+}
+
+#aboutme .biography .myphoto {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  float: left;
+  margin: 30px;
+  overflow: hidden;
+}
+
+#aboutme .biography .information {
+  color: #D6DEE4;
+  font-size: 16px;
+  /*text-align: justify;*/
+}
+
+/* Contact
+  ================================================== */
+#contact {
+  height: 600px;
+  background-image: url('../img/bg-top-portofolio.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  padding-top: 40px;
+}
+
+#contact .container {
+  margin-top: 90px;
+}
+
+#contact .container h1 {
+  margin: 0 0 30px 0;
+}
+
+#contact form textarea {
+  width: 400px;
+  height: 200px;
+  resize: vertical;
+}
+
+#contact .social-contact {
+  text-align: right;
+}
+
+#contact .social {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#contact .social ul {
+  list-style: none;
+}
+
+#contact .social ul li {
+  padding: 30px 100px 30px 0;
+}
+
+.social .twitter {
+  background: url('../img/social.png') no-repeat;
+  background-position: right 0;
+}
+
+.social .facebook {
+  background: url('../img/social.png') no-repeat;
+  background-position: right -100px;
+}
+
+.social .google {
+  background: url('../img/social.png') no-repeat;
+  background-position: right -200px;
+}
+
+.social .skype {
+  background: url('../img/social.png') no-repeat;
+  background-position: right -300px;
+}
+
+/* Footer
+  ================================================== */
+footer p {
+  text-align: center;
+  margin: 20px;
+}

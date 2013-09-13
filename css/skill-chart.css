@@ -1,0 +1,38 @@
+/*!
+ * Simple Bar Chart
+ * Author: Arturo Bermejo - abermejo.cs@gmail.com
+ */
+
+.sc-skill-bars {
+  height: inherit;
+  border-right: 3px solid white;
+  overflow: hidden;
+}
+
+.sc-skill-bars ul { 
+  list-style: none; 
+}
+
+.sc-skill {
+  overflow: hidden;
+  font-size: 18px;
+  color: #D6DEE4;
+}
+
+.sc-skill .sc-skill-bar { 
+  height: 30px; 
+  width: 70%;
+  float: right;
+  margin: 20px 0;
+  display: inline;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sc-skill .sc-skill-label {
+  float: left;
+  margin: 20px 0;
+  display: block;
+  padding-top: 20px;
+  width: 20%;
+}
