@@ -39,7 +39,7 @@ body {
   padding: 15px;
   background: #202020;
   background: rgba(2, 15, 22, 1);
-  text-align: right;
+  /*text-align: right;*/
 }
 
 .carousel-caption h4 {
