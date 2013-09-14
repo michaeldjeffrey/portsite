@@ -8,8 +8,8 @@
 
 /* General
 -------------------------------------------------- */
-@font-face {  
-  font-family: 'Lilita One';  
+@font-face {
+  font-family: 'Lilita One';
   src: url('fonts/LilitaOne-Regular.ttf');
   font-style: 'cursive';
 }
@@ -120,7 +120,7 @@ body {
   ================================================== */
 #portofolio {
   height: 500px;
-  background-image: url('../img/bg-top-portofolio.png');
+  /*background-image: url('../img/bg-top-portofolio.png');*/
   background-repeat: repeat-x;
   background-position: top;
   padding-top: 40px;
@@ -146,7 +146,7 @@ body {
   ================================================== */
 #aboutme {
   height: 620px;
-  background-image: url('../img/bg-top-aboutme.png');
+  /*background-image: url('../img/bg-top-aboutme.png');*/
   background-repeat: repeat-x;
   background-position: top;
   padding-top: 40px;
@@ -181,7 +181,7 @@ body {
   ================================================== */
 #contact {
   height: 600px;
-  background-image: url('../img/bg-top-portofolio.png');
+  /*background-image: url('../img/bg-top-portofolio.png');*/
   background-repeat: repeat-x;
   background-position: top;
   padding-top: 40px;
