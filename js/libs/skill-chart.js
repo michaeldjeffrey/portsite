@@ -11,7 +11,7 @@ var skillChart = {};
   var event_div  = null;
   var skills_container = null;
   var skill_bars = null;
- 
+
   // Public Method
   this.init = function( obj ){
     data = obj.data
@@ -26,11 +26,11 @@ var skillChart = {};
     $.each(data, function(i, s){
       var bar = '<li class="sc-skill"> \
                   <span class="sc-skill-label">'+s.label+'</span> \
-                  <div style="width:'+0+'%; background-color:'+s.bar_color+'"" data-percent="'+(s.percent-25)+'"\
+                  <div style="width:'+0+'%; background-color:'+s.bar_color+'"" data-percent="'+((s.percent/100)*75)+'"\
                     class="sc-skill-bar"> \
-                    <span class="sc-skill-percent">'+s.percent+'%</span> \
                   </div> \
                 </li>'
+                    //<span class="sc-skill-percent">'+s.percent+'%</span> \
       skill_bars.append(bar);
     });
   }
@@ -50,5 +50,5 @@ var skillChart = {};
       })
     })
   }
- 
+
 }).apply( skillChart );
