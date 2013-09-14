@@ -4,28 +4,23 @@ $(document).on('ready', function() {
 
   var skills_data = [
     {
-      label : "Html",
+      label : "Bootstrap/ Foundation",
       percent: 100,
       bar_color: "#194F79"
     },
     {
-      label : "Css",
-      percent: 80,
-      bar_color: "#F60"
-    },
-    {
-      label : "JavaScript",
+      label : "Node",
       percent: 80,
       bar_color: "#0E6442"
     },
     {
-      label : "PHP",
+      label : "Backbone",
       percent: 50,
       bar_color: "#96517A"
     },
     {
-      label : "python",
-      percent: 60,
+      label : "Django",
+      percent: 70,
       bar_color: "#a6a1aA"
     }
 
