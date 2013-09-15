@@ -5,17 +5,17 @@ $(document).on('ready', function() {
   var skills_data = [
     {
       label : "Bootstrap/ Foundation",
-      percent: 100,
+      percent: 90,
       bar_color: "#194F79"
     },
     {
       label : "Node",
-      percent: 80,
+      percent: 50,
       bar_color: "#0E6442"
     },
     {
       label : "Backbone",
-      percent: 50,
+      percent: 60,
       bar_color: "#96517A"
     },
     {
