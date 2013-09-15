@@ -135,12 +135,20 @@ body {
   margin: 0 auto 0 auto;
 }
 
+.carousel-inner .item a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
 #portofolio .phrase {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
 }
 
+.carousel-inner ul li{
+	color: #bbb;
+}
 
 /* About me
   ================================================== */
